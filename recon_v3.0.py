@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 from argparse import ArgumentParser, REMAINDER, RawDescriptionHelpFormatter
@@ -1314,7 +1314,7 @@ def reconstruct_overall_distribution(file_in, file_out, total_clones=None, weigh
 
 def read_sample_fit(MLE_filename, return_threshold = False):
 
-    with open(MLE_filename, 'rU') as MLE_file:
+    with open(MLE_filename, 'r') as MLE_file:
         try:
             in_best_fit = False
             in_start_params = True
